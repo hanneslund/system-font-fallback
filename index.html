@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System font fallback</title>
+    <style>
+      @font-face {
+        font-family: "Mac Fallback";
+        src: local(-apple-system), local(BlinkMacSystemFont);
+      }
+      @font-face {
+        font-family: "Windows Fallback";
+        src: local(Segoe UI);
+      }
+      p {
+        font-family: "Mac Fallback", "Windows Fallback";
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello world!</p>
+  </body>
+</html>
